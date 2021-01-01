@@ -12,7 +12,7 @@ consistant, you should be good to go!
 
 To install the project using go:
 
-    go get -u github.com/SamChinellato/k8s-sync
+    go get -v github.com/SamChinellato/k8s-sync
 
 ---
 
