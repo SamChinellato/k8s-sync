@@ -76,6 +76,11 @@ To reapply resources every 10 seconds against your curent cluster context:
 			log.Fatal(err)
 		}
 
+		if filename == "" {
+			fmt.Println("Please set a directory with: \n    'k8s-sync reconcile -f <target>' ")
+			os.Exit(2)
+		}
+
 		fileInfo := FileCheck(filename)
 
 		// Setup START
