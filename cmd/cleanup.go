@@ -56,6 +56,10 @@ context Kubernetes cluster.	`,
 		if err != nil {
 			log.Fatal(err)
 		}
+		if filename == "" {
+			fmt.Println("Please set a directory with: \n    'k8s-sync reconcile -f <target>' ")
+			os.Exit(2)
+		}
 
 		fileInfo := FileCheck(filename)
 		home := homedir.HomeDir()
