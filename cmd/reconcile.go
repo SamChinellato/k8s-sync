@@ -77,7 +77,7 @@ To reapply resources every 10 seconds against your curent cluster context:
 		}
 
 		if filename == "" {
-			fmt.Println("Please set a directory with: \n    'k8s-sync reconcile -f <target>' ")
+			fmt.Println("Please set a file or directory with: \n    'k8s-sync reconcile -f <target>' ")
 			os.Exit(2)
 		}
 

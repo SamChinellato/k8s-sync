@@ -57,7 +57,7 @@ context Kubernetes cluster.	`,
 			log.Fatal(err)
 		}
 		if filename == "" {
-			fmt.Println("Please set a directory with: \n    'k8s-sync reconcile -f <target>' ")
+			fmt.Println("Please set a file or directory with: \n    'k8s-sync cleanup -f <target>' ")
 			os.Exit(2)
 		}
 
